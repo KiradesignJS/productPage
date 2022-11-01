@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins';
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background: #ececec;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.container .product {
+  width: 90%;
+  max-width: 750px;
+  display: flex;
+  box-shadow: -10px 5px 10px 10px rgba(0, 0, 0, 0.05);
+
+}
+
+.gallery {
+  flex-basis: 47%;
+  /*transform: scale(1.08);*/
+}
+
+.gallery img {
+  width: 100%;
+  display: block;
+
+}
+
+.details {
+  flex-basis: 53%;
+  background: #fff;
+  padding: 40px;
+  padding-left: 40px;
+}
