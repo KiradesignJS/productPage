@@ -26,16 +26,18 @@
 /*Gallery*/
 .gallery {
   flex-basis: 47%;
+  position: relative;
 }
 
 .gallery img {
   width: 100%;
-  display: block;
+  display: flex;
 
 }
 
 /*Details*/
 .details {
+  display: block;
   flex-basis: 53%;
   background: #fff;
   padding: 40px;
@@ -70,7 +72,7 @@
 .size-select {
   display: flex;
   align-items: center;
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
 .size-select p {
@@ -133,5 +135,59 @@
 
 .color-select input:checked + span {
   transform: scale(0.7);
-  box-shadow: 0 0 0 4px #fff, 0 0 0 4px #fff;
+  box-shadow: 0 0 0 4px #fff, 0 0 0 6px #000;
+}
+
+.quantity-select {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.quantity-select p {
+  width: 75px;
+}
+
+.quantity-select input {
+  background: #eee;
+  border: none;
+  outline: none;
+  padding: 2px 2px 2px 15px;
+  width: 52px;
+  border-radius: 10px;
+}
+
+form button {
+  background-color: rgb(74, 216, 150);
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  width: 100%;
+  padding: 10px;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  margin-top: 50px;
+  cursor: pointer;
+  box-shadow: 0px 10px 10px rgb(74, 216, 150, 0.25);
+}
+
+.controls {
+  position: absolute;
+  bottom: 40px;
+  right: 5px;
+}
+
+.btn {
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgb(74, 216, 150, 0.3);
+  margin: 10px;
+  cursor: pointer;
+}
+
+.btn.active {
+  background: #4ad896;
 }
